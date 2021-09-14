@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>SU21 PD1 3ed set</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+	<div id="page-wrap">
+		<h1>SU21 PD1 3ed set</h1>
+		<form action="#" method="post" id="quiz">
+		
+            <ol>
+<li>
+    <h3>How can a developer determine if a CustomerObject__c record has been manually shared with the current user in Apex?
+    </h3>
+    <div>
+        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+        <label for="question-1-answers-A">A) By calling the profile settings of the current user.</label>
+    </div>
+    <div>
+        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+        <label for="question-1-answers-B">B) By querying CustomObject__Share.</label>
+    </div>
+    <div>
+        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+        <label for="question-1-answers-C">C)  By calling the isShared() method for the record</label>
+    </div>
+    <div>
+        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+        <label for="question-1-answers-D">D) By querying the role hierarchy</label>
+    </div>
+
+    <div>
+        <label for="question-1-show-answer">Show Answer</label>
+        <input id="trigger" type="checkbox" name="question-1-show-answer">
+        <div class="box">
+            By querying CustomerObject__Share
+
+            TO access sharing programmatically, you must use the share object accociated with the standard or Custom object for which you want
+            to share.
+        </div>
+    </div>
+</li>
+
+
+<li>
+    <h3>In which order does Salesforce execute events upon saving a record?
+    </h3>
+    <div>
+        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+        <label for="question-1-answers-A">A) Validation Rules; Before Tigger; Validation Rules; After Trigger; Assignmet Rules; Workflow Rules;</label>
+    </div>
+    <div>
+        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+        <label for="question-1-answers-B">B) Before Tigger; Validation Rules; After Trigger; Assignmet Rules; Workflow Rules.</label>
+    </div>
+    <div>
+        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+        <label for="question-1-answers-C">C)  Validation Rules; Before Tigger; After Trigger; Workflow Rules; Assignmet Rules; </label>
+    </div>
+
+    <div>
+        <label for="question-1-show-answer">Show Answer</label>
+        <input id="trigger" type="checkbox" name="question-1-show-answer">
+        <div class="box">
+            A
+            
+            Correct.
+            •	Runs system validation check.
+            •	Executes all before triggers.
+            •	Runs most system validation steps again, such as verifying that all required fields have a non-null value, and runs any user-defined validation rules. The only system validation that Salesforce doesn't run a second time (when the request comes from a standard UI edit page) is the enforcement of layout-specific rules.
+            •	Executes duplicate rules. If the duplicate rule identifies the record as a duplicate and uses the block action, the record is not saved and no further steps, such as after triggers and workflow rules, are taken.
+            •	Saves the record to the database, but doesn't commit yet.
+            •	Executes all after triggers.
+            •	Executes assignment rules.
+            •	Executes auto-response rules.
+            •	Executes workflow rules.
+            •	If there are workflow field updates, updates the record again.
+            •	If the record was updated with workflow field updates, fires before update triggers and after update triggers one more time (and only one more time), in addition to standard validations. Custom validation rules, duplicate rules, and escalation rules are not run again.
+        </div>
+    </div>
+</li>
+</ol>
+
+</form>
+</div>
+</body>
+
+</html>
