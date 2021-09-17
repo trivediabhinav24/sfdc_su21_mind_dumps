@@ -362,6 +362,136 @@
                         </div>
                     </div>
                 </li>
+                <li>
+                    <h3>
+                    A developer wrote Apex code that calls out to an external system.
+                    How should a developer write the test to provide test coverage?</h3>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-A" value="A" />
+                        <label for="question-9-answers-A">A) Write a class that implements the HTTPCalloutMock interface.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-B" value="B" />
+                        <label for="question-9-answers-B">B) Write a class that extends HTTPCalloutMock.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-C" value="C" />
+                        <label for="question-9-answers-C">C) Write a class that extends WebserviceMock.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-D" value="D" />
+                        <label for="question-9-answers-D">D) Write a class that implements the WebserviceMock interface.</label>
+                    </div>
+                    <div>
+                        <label for="question-9-show-answer">Show Answer</label>
+                        <input id="trigger" type="checkbox" name="question-9-show-answer">
+                        <div class="box">
+                            A
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        If Apex code executes inside the execute() method of an Apex class when implementing the Batchable interface, 
+                        which two statements are true regarding governor limits? (Choose two.)</h3>
+                    <div>
+                        <input type="radio" name="question-11-answers" id="question-11-answers-A" value="A" />
+                        <label for="question-11-answers-A">A) The Apex governor limits are reset for each iteration of the execute() method.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-11-answers" id="question-11-answers-B" value="B" />
+                        <label for="question-11-answers-B">B) The Apex governor limits cannot be exceeded due to the asynchronous nature of the transaction.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-11-answers" id="question-11-answers-C" value="C" />
+                        <label for="question-11-answers-C">C) The Apex governor limits might be higher due to the asynchronous nature of the transaction.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-11-answers" id="question-11-answers-D" value="D" />
+                        <label for="question-11-answers-D">D) The Apex governor limits are relaxed while calling the constructor of the Apex class.</label>
+                    </div>
+                    <div>
+                        <label for="question-11-show-answer">Show Answer</label>
+                        <input id="trigger" type="checkbox" name="question-11-show-answer">
+                        <div class="box">
+                            A,C
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <h3>
+                        What are two ways a developer can get the status of an enqueued job for a class that implements the queueable interface? 
+                        (Choose two.)</h3>
+                    <div>
+                        <input type="radio" name="question-12-answers" id="question-12-answers-A" value="A" />
+                        <label for="question-12-answers-A">A) View the Apex Jobs Page.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-12-answers" id="question-12-answers-B" value="B" />
+                        <label for="question-12-answers-B">B) View the Apex Status Page.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-12-answers" id="question-12-answers-C" value="C" />
+                        <label for="question-12-answers-C">C) Query the AsyncApexJob object.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-12-answers" id="question-12-answers-D" value="D" />
+                        <label for="question-12-answers-D">D) View the Apex Flex Queue.</label>
+                    </div>
+                    <div>
+                        <label for="question-12-show-answer">Show Answer</label>
+                        <input id="trigger" type="checkbox" name="question-12-show-answer">
+                        <div class="box">
+                            A,C
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>
+                        A developer considers the following snippet of code:</h3>
+                        <code>
+                            Boolen isOk;
+                            integer x;
+                            String theString = 'Hello';
+
+                            if(isOk == false && theString == 'Hello'){
+                                x = 1;
+                            }else if(isOk == false && theString == 'Hello'){
+                                x = 2;
+                            }else if(isOk != null && theString == 'Hello'){
+                                x = 3;
+                            }else{
+                                x = 4;
+                            }
+
+                        </code>
+                    <div>
+                        <input type="radio" name="question-13-answers" id="question-13-answers-A" value="A" />
+                        <label for="question-13-answers-A">A) 1.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-13-answers" id="question-13-answers-B" value="B" />
+                        <label for="question-13-answers-B">B) 2.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-13-answers" id="question-13-answers-C" value="C" />
+                        <label for="question-13-answers-C">C) 3.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-13-answers" id="question-13-answers-D" value="D" />
+                        <label for="question-13-answers-D">D) 4.</label>
+                    </div>
+                    <div>
+                        <label for="question-13-show-answer">Show Answer</label>
+                        <input id="trigger" type="checkbox" name="question-13-show-answer">
+                        <div class="box">
+                            D
+                        </div>
+                        <p><b>I know its weird but in salesforce a Boolean that is not declared a value is NULL, not false.</b></p>
+                    </div>
+                </li>
                 <a href="self-1.html" >Othere questions</a>
             </ol>
 
