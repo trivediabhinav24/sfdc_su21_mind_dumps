@@ -50,20 +50,20 @@
                 <h3>Which Salesforce org has a complete duplicate copy of the production org including data and Configuration?
                 </h3>
                 <div>
-                    <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                    <label for="question-1-answers-A">A) Partial Copy Sanbox </label>
+                    <input type="radio" name="question-2-answers" id="question-1-answers-A" value="A" />
+                    <label for="question-2-answers-A">A) Partial Copy Sanbox </label>
                 </div>
                 <div>
-                    <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                    <label for="question-1-answers-B">B) Production</label>
+                    <input type="radio" name="question-1-answers" id="question-2-answers-B" value="B" />
+                    <label for="question-2-answers-B">B) Production</label>
                 </div>
                 <div>
-                    <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                    <label for="question-1-answers-C">C) Full Sandbox</label>
+                    <input type="radio" name="question-1-answers" id="question-2-answers-C" value="C" />
+                    <label for="question-2-answers-C">C) Full Sandbox</label>
                 </div>
                 <div>
-                    <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                    <label for="question-1-answers-D">D) developer Pro Sandbox</label>
+                    <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
+                    <label for="question-2-answers-D">D) developer Pro Sandbox</label>
                 </div>
             
                 <div>
@@ -73,41 +73,8 @@
                         Full Sandbox
                     </div>
                 </div>
-                </li>
-
-                <li>
-                    <h3>A developer has following requirements
-                        <ul>
-                            <li>Calculate the total ammount on an order</li>
-                            <li>Calculate the line amount for each line Item based on quantity selected and price.</li>
-                            <li>Move Line Items to a different Order if a line Item is not stock</li>
-                        </ul>
-                        Which relationship implementation supports these requirements?
-                    </h3>
-                    <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) Order has a Master-detail field to line Item and there can be manay Line Items per Order </label>
-                    </div>
-                    <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label for="question-1-answers-B">B) Order Has a lookup filed to Line Item and there can be many Line Items per order</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label for="question-1-answers-C">C) Line Item has a Master detail field to order and the Master can be re-parented</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label for="question-1-answers-D">D) Line Item has a Lookup field to Order and there can be many order per Line Items</label>
-                    </div>
-                
-                    <div>
-                        <label for="question-1-show-answer">Show Answer</label>
-                        <input id="trigger" type="checkbox" name="question-1-show-answer">
-                        <div class="box">
-                            Line Item has a Master detail field to order and the Master can be re-parented
-                        </div>
-                    </div>
+                <a href="https://help.salesforce.com/s/articleView?id=sf.overview_edition.htm&type=5" target="blank_">Related Links</a>
+                <a href="https://docs.gearset.com/en/articles/2285301-salesforce-organizations" target="blank_">Related Links</a>
                 </li>
 
                 <li>
@@ -181,27 +148,30 @@
                     <h3>Which action may cause triggers to fire?
                     </h3>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) Renaming or replacing a picklist entry.</label>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Renaming or replacing a picklist entry.</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label for="question-1-answers-B">B) Changing a user's default division when the transfer division option is checked.</label>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) Changing a user's default division when the transfer division option is checked.</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label for="question-1-answers-C">C)  Update to feed Items</label>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C)  Update to feed Items</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label for="question-1-answers-D">D) Cascading delete oprations</label>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) Cascading delete oprations</label>
                     </div>
                 
                     <div>
-                        <label for="question-1-show-answer">Show Answer</label>
-                        <input id="trigger" type="checkbox" name="question-1-show-answer">
+                        <label for="question-5-show-answer">Show Answer</label>
+                        <input id="trigger" type="checkbox" name="question-5-show-answer">
                         <div class="box">
                             Update to feed Items
+
+                            (Only FeedItems of type TextPost, LinkPost, HasLink, ContentPost, and HasContent can be inserted, and therefore invoke the before or after insert trigger. User status updates don't cause the FeedItem triggers to fire.)
+                            (FeedAttachment isn’t a triggerable object. You can access feed attachments in FeedItem update triggers through a SOQL query)
                         </div>
                     </div>
                 </li>
@@ -242,31 +212,32 @@
                         chosse 3 answers
                     </h3>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) Process Builder can be used to check the record criteria and send an outbound message without apex code.</label>
+                        <input type="radio" name="question-6-answers" id="question-6-answers-A" value="A" />
+                        <label for="question-6-answers-A">A) Process Builder can be used to check the record criteria and send an outbound message without apex code.</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label for="question-1-answers-B">B) process Builder can be used to check the record criteria and then call Apex code.</label>
+                        <input type="radio" name="question-6-answers" id="question-6-answers-B" value="B" />
+                        <label for="question-6-answers-B">B) process Builder can be used to check the record criteria and then call Apex code.</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label for="question-1-answers-C">C) Workflows can be used to check the record criteria and send an outbound message</label>
+                        <input type="radio" name="question-6-answers" id="question-6-answers-C" value="C" />
+                        <label for="question-6-answers-C">C) Workflows can be used to check the record criteria and send an outbound message</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label for="question-1-answers-D">D) Flow Builder can be used to check the record criteria and send an outbound message without addition code.</label>
+                        <input type="radio" name="question-6-answers" id="question-6-answers-D" value="D" />
+                        <label for="question-6-answers-D">D) Flow Builder can be used to check the record criteria and send an outbound message without addition code.</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label for="question-1-answers-D">E) Approval Process has the capability to check the record criteria and send an outbound message without Apex code.</label>
+                        <input type="radio" name="question-6-answers" id="question-6-answers-D" value="D" />
+                        <label for="question-6-answers-D">E) Approval Process has the capability to check the record criteria and send an outbound message without Apex code.</label>
                     </div>
                 
                     <div>
-                        <label for="question-1-show-answer">Show Answer</label>
-                        <input id="trigger" type="checkbox" name="question-1-show-answer">
+                        <label for="question-6-show-answer">Show Answer</label>
+                        <input id="trigger" type="checkbox" name="question-6-show-answer">
                         <div class="box">
                             B, C, E
+                            <a href="https://help.salesforce.com/s/articleView?id=000358342&type=1">Related link</a>
                         </div>
                     </div>
                 </li>
@@ -276,29 +247,30 @@
                         How should the developer prevent a cross site scripting vulnerability?
                     </h3>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) ApexPages.currentPage().getParameters().get('url_param')</label>
+                        <input type="radio" name="question-7-answers" id="question-7-answers-A" value="A" />
+                        <label for="question-7-answers-A">A) ApexPages.currentPage().getParameters().get('url_param')</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label for="question-1-answers-B">B) String.escapeSingleQutes(ApexPages.currentPage().getParameters().get('url_param')).</label>
+                        <input type="radio" name="question-7-answers" id="question-7-answers-B" value="B" />
+                        <label for="question-7-answers-B">B) String.escapeSingleQutes(ApexPages.currentPage().getParameters().get('url_param')).</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label for="question-1-answers-C">C)  String.ValueOf(ApexPages.currentPage().getParameters().get('url_param'))</label>
+                        <input type="radio" name="question-7-answers" id="question-7-answers-C" value="C" />
+                        <label for="question-7-answers-C">C)  String.ValueOf(ApexPages.currentPage().getParameters().get('url_param'))</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label for="question-1-answers-D">D) ApexPages.currentPage().getParameters().get('url_param').escapeHtml4()</label>
+                        <input type="radio" name="question-7-answers" id="question-7-answers-D" value="D" />
+                        <label for="question-7-answers-D">D) ApexPages.currentPage().getParameters().get('url_param').escapeHtml4()</label>
                     </div>
                 
                     <div>
-                        <label for="question-1-show-answer">Show Answer</label>
-                        <input id="trigger" type="checkbox" name="question-1-show-answer">
+                        <label for="question-7-show-answer">Show Answer</label>
+                        <input id="trigger" type="checkbox" name="question-7-show-answer">
                         <div class="box">
-                            D
+                            B
                         </div>
                     </div>
+                    <a href="https://vceguide.com/a-developer-has-an-apex-controller-for-a-visualforce-page-that-takes-an-id-as-a-url-parameter/" target="_blank"> Check comments here</a>
                 </li>
 
                 <li>
@@ -309,25 +281,25 @@
                         }
                     </h3>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) Sharing rules will be enforced by the installing class</label>
+                        <input type="radio" name="question-10-answers" id="question-10-answers-A" value="A" />
+                        <label for="question-10-answers-A">A) Sharing rules will be enforced by the installing class</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label for="question-1-answers-B">B) Sharing rules will not be enforced for running user .</label>
+                        <input type="radio" name="question-10-answers" id="question-10-answers-B" value="B" />
+                        <label for="question-10-answers-B">B) Sharing rules will not be enforced for running user .</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label for="question-1-answers-C">C)  Sharing rules will be inherited from the calling context</label>
+                        <input type="radio" name="question-10-answers" id="question-10-answers-C" value="C" />
+                        <label for="question-10-answers-C">C)  Sharing rules will be inherited from the calling context</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label for="question-1-answers-D">D) Sharing rules will be enforced for the running users</label>
+                        <input type="radio" name="question-10-answers" id="question-10-answers-D" value="D" />
+                        <label for="question-10-answers-D">D) Sharing rules will be enforced for the running users</label>
                     </div>
                 
                     <div>
-                        <label for="question-1-show-answer">Show Answer</label>
-                        <input id="trigger" type="checkbox" name="question-1-show-answer">
+                        <label for="question-10-show-answer">Show Answer</label>
+                        <input id="trigger" type="checkbox" name="question-10-show-answer">
                         <div class="box">
                             C
                         </div>
@@ -339,27 +311,54 @@
                         What should the developer do to ensure the data is availble to the test?
                     </h3>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) Use Test.loadData() and reference a CSV file</label>
+                        <input type="radio" name="question-8-answers" id="question-8-answers-A" value="A" />
+                        <label for="question-8-answers-A">A) Use Test.loadData() and reference a CSV file</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label for="question-1-answers-B">B) Use Test.loadData() and reference to static resource .</label>
+                        <input type="radio" name="question-8-answers" id="question-8-answers-B" value="B" />
+                        <label for="question-8-answers-B">B) Use Test.loadData() and reference to static resource .</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label for="question-1-answers-C">C) Use Anonymous Apex to create the required data.</label>
+                        <input type="radio" name="question-8-answers" id="question-8-answers-C" value="C" />
+                        <label for="question-8-answers-C">C) Use Anonymous Apex to create the required data.</label>
                     </div>
                     <div>
-                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label for="question-1-answers-D">D) Use SOQL to query the org for the required data.</label>
+                        <input type="radio" name="question-8-answers" id="question-8-answers-D" value="D" />
+                        <label for="question-8-answers-D">D) Use SOQL to query the org for the required data.</label>
                     </div>
                 
                     <div>
-                        <label for="question-1-show-answer">Show Answer</label>
-                        <input id="trigger" type="checkbox" name="question-1-show-answer">
+                        <label for="question-8-show-answer">Show Answer</label>
+                        <input id="trigger" type="checkbox" name="question-8-show-answer">
                         <div class="box">
                             B
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                    Which two operations can be performed using a formula field? Choose 2 answers</h3>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-A" value="A" />
+                        <label for="question-9-answers-A">A) Displaying the last four digits of an encrypted Social Security number</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-B" value="B" />
+                        <label for="question-9-answers-B">B) Triggering a Process Builder.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-C" value="C" />
+                        <label for="question-9-answers-C">C) Displaying an Image based on the Opportunity Amount.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answers-D" value="D" />
+                        <label for="question-9-answers-D">D) Calculating a score on a Lead based on the information from another field.</label>
+                    </div>
+                    <div>
+                        <label for="question-9-show-answer">Show Answer</label>
+                        <input id="trigger" type="checkbox" name="question-9-show-answer">
+                        <div class="box">
+                            C,D
                         </div>
                     </div>
                 </li>
